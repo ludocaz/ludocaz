@@ -25,19 +25,19 @@
     </div>
     <div class="header-socials col-2">
     <a href="https://www.instagram.com" target="_blank">
-      <img src="../wp-content/themes/ludocaz/img/logo-instagram.png" alt="">
+      <img src="../img/logo-instagram.png" alt="">
     </a>
     <a href="https://www.facebook.com" target="_blank">
-      <img src="../wp-content/themes/ludocaz/img/logo-facebook.png" alt="">
+      <img src="../img/logo-facebook.png" alt="">
     </a>
     <a href="https://www.tiktok.com" target="_blank">
-      <img src="../wp-content/themes/ludocaz/img/logo-tiktok.png" alt="">
+      <img src="../img/logo-tiktok.png" alt="">
     </a>
     <a href="https://www.twitter.com" target="_blank">
-      <img src="../wp-content/themes/ludocaz/img/logo-twitter.png" alt="">
+      <img src="../img/logo-twitter.png" alt="">
     </a>
     <a href="https://www.youtube.com" target="_blank">
-      <img src="../wp-content/themes/ludocaz/img/logo-youtube.png" alt="">
+      <img src="../img/logo-youtube.png" alt="">
     </a>
 
     </div>
