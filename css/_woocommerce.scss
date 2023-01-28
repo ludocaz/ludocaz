@@ -1,0 +1,37 @@
+// PAGE "PANIER"
+
+form.woocommerce-cart-form {
+  margin-top: 2rem;
+}
+
+td.product-thumbnail img {
+  max-width: 7rem;
+}
+
+input#coupon_code {
+  width: 10rem;
+}
+
+button.button.wp-element-button {
+  border: 0.1rem !important;
+  border-style: solid !important;
+  color: $couleur-principale !important;
+}
+
+button.button.wp-element-button:hover {
+  border: 0.1rem !important;
+  border-style: solid !important;
+  color: $couleur-secondaire !important;
+}
+
+span.woocommerce-Price-amount.amount {
+  color: $couleur-secondaire !important;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+  background-color: #e0e0e0 !important;
+}
+
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+  background-color: $couleur-principale !important;
+}

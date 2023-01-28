@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/*!
+Theme Name: Ludo'caz
+Theme URI: https://www.ludocaz.fr/
+Author: Gérald JOLY
+Author URI: https://www.ludocaz.fr/
+Description: Thème pour le site Ludo'caz
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ludocaz
+*/
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&display=swap");
+h2 {
+  color: #007FA9;
+}
+
+h3 {
+  font-size: medium;
+}
+
+form.woocommerce-cart-form {
+  margin-top: 2rem;
+}
+
+td.product-thumbnail img {
+  max-width: 7rem;
+}
+
+input#coupon_code {
+  width: 10rem;
+}
+
+button.button.wp-element-button {
+  border: 0.1rem !important;
+  border-style: solid !important;
+  color: #009CFE !important;
+}
+
+button.button.wp-element-button:hover {
+  border: 0.1rem !important;
+  border-style: solid !important;
+  color: #F26619 !important;
+}
+
+span.woocommerce-Price-amount.amount {
+  color: #F26619 !important;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+  background-color: #e0e0e0 !important;
+}
+
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+  background-color: #009CFE !important;
+}
+
+.logo-menu-search {
+  width: 100%;
+}
+
+.logo-site {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-site-img {
+  max-height: 6rem;
+}
+
+.header-socials img {
+  max-width: 2.2rem;
+}
+
+.header-socials a {
+  text-decoration: none;
+}
+
+.header-phone {
+  display: flex;
+  justify-content: center;
+}
+
+.header-phone a {
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.header-phone img {
+  max-width: 2.2rem;
+}
+
+.header-connexion {
+  background: #009CFE;
+}
+
+.header-menu {
+  text-align: center;
+}
+
+#menu-menu-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-menu-principal li {
+  list-style: none;
+  font-weight: 600;
+  padding: 0 2rem;
+  width: 6rem;
+}
+
+#menu-menu-principal a {
+  text-decoration: none;
+}
+
+#menu-menu-principal li:hover {
+  background: orangered;
+  border-radius: 0.15rem;
+  padding: 1.72rem;
+}
+
+#menu-menu-principal li:hover a {
+  color: #f1f1f1;
+}
+
+#searchform input[type=text] {
+  border: none;
+  border-radius: 1rem;
+  background: #f1f1f1;
+  color: orangered;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+#searchform input::-moz-placeholder {
+  color: green;
+}
+
+#searchform input:-ms-input-placeholder {
+  color: green;
+}
+
+#searchform input::placeholder {
+  color: green;
+}
+
+.annonces {
+  background: orange;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.annonces p {
+  margin: 1rem;
+}
+
+/* CALL TO ACTION*/
+.calltoaction {
+  padding: 2rem 0;
+}
+
+.calltoaction img {
+  border-radius: 2rem 0;
+  max-width: 100%;
+}
+
+/* Boucle nouveautées accueil */
+.nouveautees-produits {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.product-item {
+  width: inherit;
+  margin: 0 0.5rem;
+  background: rgba(128, 128, 128, 0.1490196078);
+  border-radius: 1rem;
+}
+
+.product-item h3 {
+  padding: 0 1rem;
+}
+
+.product-excerpt {
+  padding: 0 1rem;
+}
+
+.product-price {
+  padding: 0.2rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.product-price ins {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+del {
+  text-decoration: none !important;
+}
+
+del .woocommerce-Price-amount {
+  color: #F26619 !important;
+  padding-left: 0.4rem !important;
+  font-size: 12px !important;
+  text-decoration: line-through;
+  -webkit-text-decoration-color: #121314;
+          text-decoration-color: #121314;
+}
+
+.product-image img {
+  height: 14rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 1rem;
+}
+
+.product-title a {
+  text-decoration: none;
+  color: #F26619;
+  font-size: x-large;
+}
+
+span.woocommerce-Price-amount.amount {
+  font-size: larger;
+  font-weight: 600;
+  color: #007FA9;
+  font-family: "Chakra Petch", sans-serif;
+}/*# sourceMappingURL=style.css.map */
