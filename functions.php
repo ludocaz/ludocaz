@@ -7,7 +7,7 @@ use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $myUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://github.com/ludocaz/ludocaz_theme.git',
 	__FILE__,
-	'unique-plugin-or-theme-slug'
+	'ludocaz'
 );
 
 //Set the branch that contains the stable release.
