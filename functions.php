@@ -1,5 +1,21 @@
 <?php
 
+// AUTO UPDATER
+require 'plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/ludocaz/ludocaz_theme.git',
+	__FILE__,
+	'unique-plugin-or-theme-slug'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');
+
+//Optional: If you're using a private repository, specify the access token like this:
+$myUpdateChecker->setAuthentication('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');
+
 function ludocaz_supports () {
   add_theme_support( 'title-tag' );
   add_theme_support( 'post-thumbnails' );
