@@ -43,13 +43,13 @@
 <div class="calltoaction">
   <div class="row">
     <div class="col-4">
-      <img src="../wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
+      <img src="https://ludocaz.fr/wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
     </div>
     <div class="col-4">
-      <img src="../wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
+      <img src="https://ludocaz.fr/wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
     </div>
     <div class="col-4">
-      <img src="../wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
+      <img src="https://ludocaz.fr/wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
     </div>
   </div>
 </div>
