@@ -1,7 +1,5 @@
 <?php get_header() ?>
 
-ceci est un test
-
 <div class="calltoaction">
   <div class="row">
     <div class="col-4">
