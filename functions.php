@@ -70,8 +70,8 @@ function automatic_GitHub_updates_plugins( $data ) {
 $plugin = plugin_basename( FILE ); // Nom du plugin
 $current = get_option( 'your_current_version_option' ); // Obtenir la version actuelle du plugin
 // Informations sur GitHub
-$user = 'ludocaz'; // Nom d'utilisateur GitHub hébergeant le dépôt
-$repo = 'annonces-bandeau'; // Nom du dépôt tel qu'il apparaît dans l'URL
+$user = 'your_GitHub_username'; // Nom d'utilisateur GitHub hébergeant le dépôt
+$repo = 'your_GitHub_repo_name'; // Nom du dépôt tel qu'il apparaît dans l'URL
 // Obtenir la dernière étiquette de version du dépôt. L'entête User-Agent doit être envoyée, selon la documentation
 // de l'API de GitHub: https://developer.github.com/v3/#user-agent-required
 $file = @json_decode( @file_get_contents( 'https://api.github.com/repos/'.$user.'/'.$repo.'/releases/latest', false,
