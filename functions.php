@@ -37,7 +37,7 @@ function automatic_GitHub_updates($data) {
   $current = wp_get_theme()->get('Version'); // Get the version of the current theme
   // GitHub information
   $user = 'ludocaz'; // The GitHub username hosting the repository
-  $repo = 'ludocaz_theme'; // Repository name as it appears in the URL
+  $repo = 'ludocaz'; // Repository name as it appears in the URL
   // Get the latest release tag from the repository. The User-Agent header must be sent, as per
   // GitHub's API documentation: https://developer.github.com/v3/#user-agent-required
   $file = @json_decode(@file_get_contents('https://api.github.com/repos/'.$user.'/'.$repo.'/releases/latest', false,
