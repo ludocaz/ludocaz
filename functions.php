@@ -29,67 +29,33 @@ function my_customizer_controls( $wp_customize ) {
 }
 add_action( 'customize_register', 'my_customizer_controls' );
 
-// Mises à jour automatiques du thème à partir du dépôt GitHub
-add_filter( 'pre_set_site_transient_update_themes', 'automatic_GitHub_updates', 100, 1 );
-function automatic_GitHub_updates( $data ) {
-  // Informations sur le thème
-  $theme   = get_stylesheet(); // Nom du dossier du thème actuel
-  $current = wp_get_theme()->get( 'Version' ); // Obtenir la version du thème actuel
-  // Informations sur GitHub
-  $user = 'ludocaz'; // Nom d'utilisateur GitHub hébergeant le dépôt
-  $repo = 'ludocaz'; // Nom du dépôt tel qu'il apparaît dans l'URL
-  // Obtenir la dernière étiquette de version du dépôt. L'entête User-Agent doit être envoyée, selon la documentation
-  // de l'API de GitHub: https://developer.github.com/v3/#user-agent-required
-  $file = @json_decode( @file_get_contents( 'https://api.github.com/repos/'.$user.'/'.$repo.'/releases/latest', false,
-      stream_context_create( [ 'http' => [ 'header' => "User-Agent: ".$user."\r\n" ] ] )
-  ) );
-  if ( $file ) {
-    $update = filter_var( $file->tag_name, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION );
-    // Renvoyer une réponse uniquement si le nouveau numéro de version est supérieur à la version actuelle
-    if ( $update > $current ) {
-      $data->response[$theme] = array(
-        'theme'       => $theme,
-        // Supprimez le numéro de version de tous les caractères non alphabétiques (à l'exclusion du point)
-        // de cette façon, vous pouvez toujours utiliser des étiquettes comme v1.1 ou ver1.1 si vous le souhaitez
-        'new_version' => $update,
-        'url'         => 'https://github.com/'.$user.'/'.$repo,
-        'package'     => $file->assets[0]->browser_download_url,
+// Automatic theme updates from the GitHub repository
+add_filter('pre_set_site_transient_update_themes', 'automatic_GitHub_updates', 100, 1);
+function automatic_GitHub_updates($data) {
+  // Theme information
+  $theme   = get_stylesheet(); // Folder name of the current theme
+  $current = wp_get_theme()->get('Version'); // Get the version of the current theme
+  // GitHub information
+  $user = 'ludocaz'; // The GitHub username hosting the repository
+  $repo = 'ludocaz'; // Repository name as it appears in the URL
+  // Get the latest release tag from the repository. The User-Agent header must be sent, as per
+  // GitHub's API documentation: https://developer.github.com/v3/#user-agent-required
+  $file = @json_decode(@file_get_contents('https://api.github.com/repos/'.$user.'/'.$repo.'/releases/latest', false,
+      stream_context_create(['http' => ['header' => "User-Agent: ".$user."\r\n"]])
+  ));
+  if($file) {
+	$update = filter_var($file->tag_name, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+    // Only return a response if the new version number is higher than the current version
+    if($update > $current) {
+  	  $data->response[$theme] = array(
+	      'theme'       => $theme,
+	      // Strip the version number of any non-alpha characters (excluding the period)
+	      // This way you can still use tags like v1.1 or ver1.1 if desired
+	      'new_version' => $update,
+	      'url'         => 'https://github.com/'.$user.'/'.$repo,
+	      'package'     => $file->assets[0]->browser_download_url,
       );
     }
   }
   return $data;
-}
-
-
-// ******************************************************************************************
-
-// Mises à jour automatiques du plugin à partir du dépôt GitHub
-add_filter( 'pre_set_site_transient_update_plugins', 'automatic_GitHub_updates_plugins', 100, 1 );
-function automatic_GitHub_updates_plugins( $data ) {
-// Informations sur le plugin
-$plugin = plugin_basename( FILE ); // Nom du plugin
-$current = get_option( 'your_current_version_option' ); // Obtenir la version actuelle du plugin
-// Informations sur GitHub
-$user = 'your_GitHub_username'; // Nom d'utilisateur GitHub hébergeant le dépôt
-$repo = 'your_GitHub_repo_name'; // Nom du dépôt tel qu'il apparaît dans l'URL
-// Obtenir la dernière étiquette de version du dépôt. L'entête User-Agent doit être envoyée, selon la documentation
-// de l'API de GitHub: https://developer.github.com/v3/#user-agent-required
-$file = @json_decode( @file_get_contents( 'https://api.github.com/repos/'.$user.'/'.$repo.'/releases/latest', false,
-stream_context_create( [ 'http' => [ 'header' => "User-Agent: ".$user."\r\n" ] ] )
-) );
-if ( $file ) {
-$update = filter_var( $file->tag_name, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION );
-// Renvoyer une réponse uniquement si le nouveau numéro de version est supérieur à la version actuelle
-if ( $update > $current ) {
-$data->response[$plugin] = array(
-'plugin' => $plugin,
-// Supprimez le numéro de version de tous les caractères non alphabétiques (à l'exclusion du point)
-// de cette façon, vous pouvez toujours utiliser des étiquettes comme v1.1 ou ver1.1 si vous le souhaitez
-'new_version' => $update,
-'url' => 'https://github.com/'.$user.'/'.$repo,
-'package' => $file->assets[0]->browser_download_url,
-);
-}
-}
-return $data;
 }
