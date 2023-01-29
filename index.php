@@ -1,19 +1,5 @@
 <?php get_header() ?>
 
-<div class="calltoaction">
-  <div class="row">
-    <div class="col-4">
-      <img src="../wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
-    </div>
-    <div class="col-4">
-      <img src="../wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
-    </div>
-    <div class="col-4">
-      <img src="../wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
-    </div>
-  </div>
-</div>
-
 <div class="les-nouveautees row">
   <div class="col-9"><h2>Les nouveautées</h2></div>
   <div class="nouveautees-produits col-12"><?php 
@@ -52,6 +38,20 @@
     }
     wp_reset_postdata();
   ?></div>
+</div>
+
+<div class="calltoaction">
+  <div class="row">
+    <div class="col-4">
+      <img src="../wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
+    </div>
+    <div class="col-4">
+      <img src="../wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
+    </div>
+    <div class="col-4">
+      <img src="../wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
+    </div>
+  </div>
 </div>
 
 <?php get_footer() ?>
