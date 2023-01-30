@@ -19,6 +19,14 @@ h3 {
   font-size: medium;
 }
 
+a {
+  color: #009CFE;
+}
+
+a::hover {
+  color: #F26619;
+}
+
 form.woocommerce-cart-form {
   margin-top: 2rem;
 }
@@ -116,7 +124,7 @@ span.woocommerce-Price-amount.amount {
 }
 
 #menu-menu-principal li:hover {
-  background: orangered;
+  background: #F26619;
   border-radius: 0.15rem;
   padding: 1.72rem;
 }
@@ -129,22 +137,23 @@ span.woocommerce-Price-amount.amount {
   border: none;
   border-radius: 1rem;
   background: #f1f1f1;
-  color: orangered;
+  color: #F26619;
+  font-weight: 600;
   padding: 10px;
   font-size: 16px;
   width: 100%;
 }
 
 #searchform input::-moz-placeholder {
-  color: green;
+  color: #009CFE;
 }
 
 #searchform input:-ms-input-placeholder {
-  color: green;
+  color: #009CFE;
 }
 
 #searchform input::placeholder {
-  color: green;
+  color: #009CFE;
 }
 
 .annonces {
@@ -233,4 +242,26 @@ span.woocommerce-Price-amount.amount {
   font-weight: 600;
   color: #007FA9;
   font-family: "Chakra Petch", sans-serif;
+}
+
+.liste-nouveautees h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: none;
+  color: #009CFE;
+}
+
+.liste-nouveautees p {
+  text-align: center;
+}
+
+.liste-nouveautees a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #F26619;
+}
+
+.liste-nouveautees a:hover {
+  color: #009CFE;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */

@@ -54,4 +54,60 @@
   </div>
 </div>
 
+<div class="liste-nouveautees">
+    <h2>Derniers arrivages</h2>
+    <?php
+        $args = array(
+            'post_type' => 'product',
+            'posts_per_page' => 10,
+        );    $counter = 1;
+        $latest_products = new WP_Query( $args );
+        while ( $latest_products->have_posts() ) : $latest_products->the_post();
+            $product = wc_get_product( get_the_ID() );
+    ?>
+        <div class="row">
+            <div class="col-5">
+                <?php if ( $counter == 1 ) : ?>
+                    <h3 id="titrearticleliste">Titre des articles</h3>
+                <?php endif; ?>
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_title(); ?>
+                </a>
+            </div>
+    
+            <div class="col-1">
+                <?php if ( $counter == 1 ) : ?>
+                    <h3>Stock(s)</h3>
+                <?php endif; ?>
+                <p><?php echo $product->get_stock_quantity(); ?></p>
+            </div>
+    
+            <div class="col-1">
+                <?php if ( $counter == 1 ) : ?>
+                    <h3>État</h3>
+                <?php endif; ?>
+                <p><?php echo $product->get_stock_status(); ?></p>
+            </div>
+    
+            <div class="col-2">
+                <?php if ( $counter == 1 ) : ?>
+                    <h3>Prix du produit</h3>
+                <?php endif; ?>
+                <p><?php echo $product->get_price(); ?>€</p>
+            </div>
+    
+            <div class="col-3">
+                <?php if ( $counter == 1 ) : ?>
+                    <h3>Bouton accès article</h3>
+                <?php endif; ?>
+                <a href="<?php the_permalink(); ?>" class="button">Accéder à l'article</a>
+            </div>
+        </div>
+    <?php 
+        $counter++;
+        endwhile; 
+        wp_reset_postdata(); 
+    ?>
+</div>    
+
 <?php get_footer() ?>

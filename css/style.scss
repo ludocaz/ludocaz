@@ -75,7 +75,7 @@ Text Domain: ludocaz
 }
 
 #menu-menu-principal li:hover {
-  background: orangered;
+  background: $couleur-secondaire;
   border-radius: 0.15rem;
   padding: 1.72rem;
 }
@@ -88,14 +88,15 @@ Text Domain: ludocaz
   border: none;
   border-radius: 1rem;
   background: #f1f1f1;
-  color: orangered;
+  color: $couleur-secondaire;
+  font-weight: 600;
   padding: 10px;
   font-size: 16px;
   width: 100%;
 }
 
 #searchform input::placeholder {
-  color: green;
+  color: $couleur-principale;
 }
 
 .annonces {
@@ -184,4 +185,28 @@ span.woocommerce-Price-amount.amount {
   font-weight: 600;
   color: $couleur-titres;
   font-family: 'Chakra Petch', sans-serif;
+}
+
+// Boucle nouveautées liste
+
+.liste-nouveautees h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: none;
+  color: $couleur-principale;
+}
+
+.liste-nouveautees p {
+  text-align: center;
+}
+
+.liste-nouveautees a {
+  font-weight: 600;
+  text-decoration: none;
+  color: $couleur-secondaire;
+}
+
+.liste-nouveautees a:hover {
+  color: $couleur-principale;
+  font-weight: 700;
 }

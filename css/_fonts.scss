@@ -9,3 +9,11 @@ h2 {
 h3 {
   font-size: medium;
 }
+
+a {
+  color: $couleur-principale;
+}
+
+a::hover {
+  color: $couleur-secondaire;
+}
