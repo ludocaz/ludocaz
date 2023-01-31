@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*!
+/*
 Theme Name: Ludo'caz
 Theme URI: https://www.ludocaz.fr/
 Author: Gérald JOLY
@@ -11,6 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ludocaz
 */
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Zilla+Slab+Highlight:wght@700&display=swap");
 h2 {
   color: #007FA9;
 }
@@ -63,6 +64,22 @@ span.woocommerce-Price-amount.amount {
   background-color: #009CFE !important;
 }
 
+.logo-menu-search.row.align-items-center {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.align-items-center {
+  align-items: center !important;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  z-index: 10;
+}
+
 .logo-menu-search {
   width: 100%;
 }
@@ -90,16 +107,32 @@ span.woocommerce-Price-amount.amount {
 }
 
 .header-phone a {
+  font-size: 26px;
+  color: #009CFE;
+  font-family: "Zilla Slab Highlight", cursive !important;
   text-decoration: none;
   margin-left: 0.5rem;
+}
+
+.header-phone a:hover {
+  font-size: 28px;
+  color: #F26619;
 }
 
 .header-phone img {
   max-width: 2.2rem;
 }
 
-.header-connexion {
-  background: #009CFE;
+.header-connexion a {
+  font-size: 26px;
+  color: #009CFE;
+  font-family: "Zilla Slab Highlight", cursive !important;
+  transition: color 0.2s ease;
+}
+
+.header-connexion a:hover {
+  font-size: 28px;
+  color: #F26619;
 }
 
 .header-menu {
@@ -136,7 +169,7 @@ span.woocommerce-Price-amount.amount {
 #searchform input[type=text] {
   border: none;
   border-radius: 1rem;
-  background: #f1f1f1;
+  background: #d3d3d3;
   color: #F26619;
   font-weight: 600;
   padding: 10px;
@@ -157,7 +190,8 @@ span.woocommerce-Price-amount.amount {
 }
 
 .annonces {
-  background: orange;
+  background: #F26619;
+  color: #121314;
   padding: 1px;
   display: flex;
   justify-content: center;
@@ -165,6 +199,12 @@ span.woocommerce-Price-amount.amount {
 
 .annonces p {
   margin: 1rem;
+}
+
+.header-connexion.col-2 a {
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Chakra Petch";
 }
 
 /* CALL TO ACTION*/

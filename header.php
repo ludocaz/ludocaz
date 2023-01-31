@@ -42,9 +42,25 @@
 
     </div>
     <div class="header-connexion col-2">
-      <p>Connexion / Créer un compte</p>
+        <?php if ( is_user_logged_in() ) { ?>
+    <a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" class="button">Mon compte</a>
+
+    <?php } else { ?>
+    <a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" class="button">Connexion</a>
+
+    <?php } ?>
     </div>
   </div>
+
+<nav class="menu-principal">
+  <?php
+    wp_nav_menu( array(
+      'menu' => 'menu-principal',
+      'container' => false,
+      'menu_class' => 'menu-principal-container'
+    ));
+  ?>
+</nav>
 
   <div class="annonces align-items-center">
     <p>
