@@ -25,7 +25,7 @@
     </div>
     <div class="header-socials col-2">
     <a href="https://www.instagram.com" target="_blank">
-      <img src="https://ludocaz.fr/wp-content/themes/ludocaz/img/logo-instagram.png" alt="">
+      <img src="..\wp-content\themes\ludocaz\img\logo-instagram.png" alt="">
     </a>
     <a href="https://www.facebook.com" target="_blank">
       <img src="..\wp-content\themes\ludocaz\img\logo-facebook.png" alt="">
