@@ -15,6 +15,11 @@ Text Domain: ludocaz
 @import "colors";
 @import "woocommerce";
 
+
+h3 {
+  font-size: 21px !important;
+}
+
 .logo-menu-search.row.align-items-center {
   position: sticky;
   margin: 0;
@@ -23,16 +28,15 @@ Text Domain: ludocaz
   background-color: $couleur-principale-dark;
 }
 
-.align-items-center {
+.annonces {
   align-items: center !important;
-  position: sticky;
   top: 6rem;
-  z-index: 10;
 }
 
 .logo-site {
   display: flex;
   justify-content: center;
+  padding: 4px 0;
 }
 
 .logo-site-img {
@@ -121,16 +125,32 @@ input.search-field {
 //Tuiles informations
 
 .calltoaction {
-  margin: 0;
+  margin-top: -40px !important;
+  background-color: $couleur-texte;
+  padding-top: 15px;
+  border-radius: 12px;
 
   img {
+    border-radius: 15px;
     width: 100%;
   }
 }
 
 /* Boucle nouveautées accueil */
 
+.titre-h2-accueil {
+  background-color: $couleur-principale;
+  padding: 5px 2px;
+  margin: 20px 0;
+  border-radius: 0rem 1rem 1rem 0rem;
+  color: $couleur-texte;
+  border-style: outset;
+  border-color: $couleur-principale-dark;
+}
+
 .nouveautees-produits {
+
+  padding: 0 !important;
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -195,9 +215,6 @@ span.woocommerce-Price-amount.amount {
 // Boucle nouveautées liste
 
 .liste-nouveautees h3 {
-  font-size: 1.2rem;
-  text-align: center;
-  font-style: none;
   color: $couleur-principale;
 }
 

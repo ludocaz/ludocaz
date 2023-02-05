@@ -19,8 +19,8 @@
   </div>
 
   <div class="les-nouveautees row">
-    <div class="col-9">
-      <h2>Les nouveautées</h2>
+    <div class="col-3">
+      <h2 class="titre-h2-accueil">Les nouveautées</h2>
     </div>
     <div class="nouveautees-produits col-12">
       <?php
@@ -64,7 +64,7 @@
   </div>
 
   <div class="liste-nouveautees">
-    <h2>Derniers arrivages</h2>
+    <h2 class="titre-h2-accueil col-3">Derniers arrivages</h2>
     <?php
     $args = array(
       'post_type' => 'product',
@@ -78,7 +78,7 @@
       <div class="row">
         <div class="col-5">
           <?php if ($counter == 1) : ?>
-            <h3 id="titrearticleliste">Titre des articles</h3>
+            <h3>Titre des articles</h3>
           <?php endif; ?>
           <a href="<?php the_permalink(); ?>">
             <?php the_title(); ?>
