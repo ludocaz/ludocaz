@@ -10,22 +10,31 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ludocaz
 */
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Zilla+Slab+Highlight:wght@700&display=swap");
-h2 {
-  color: #007FA9;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 h3 {
   font-size: medium;
 }
 
 a {
-  color: #009CFE;
+  color: #0077B6;
 }
 
 a::hover {
-  color: #F26619;
+  color: #FF7F11;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.prix {
+  font-family: "Lato", sans-serif;
 }
 
 form.woocommerce-cart-form {
@@ -43,17 +52,17 @@ input#coupon_code {
 button.button.wp-element-button {
   border: 0.1rem !important;
   border-style: solid !important;
-  color: #009CFE !important;
+  color: #0077B6 !important;
 }
 
 button.button.wp-element-button:hover {
   border: 0.1rem !important;
   border-style: solid !important;
-  color: #F26619 !important;
+  color: #FF7F11 !important;
 }
 
 span.woocommerce-Price-amount.amount {
-  color: #F26619 !important;
+  color: #FF7F11 !important;
 }
 
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
@@ -61,15 +70,16 @@ span.woocommerce-Price-amount.amount {
 }
 
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
-  background-color: #009CFE !important;
+  background-color: #0077B6 !important;
 }
 
 .logo-menu-search.row.align-items-center {
   position: -webkit-sticky;
   position: sticky;
+  margin: 0;
   top: 0;
   z-index: 1;
-  background-color: #ffffff;
+  background-color: #003552;
 }
 
 .align-items-center {
@@ -80,10 +90,6 @@ span.woocommerce-Price-amount.amount {
   z-index: 10;
 }
 
-.logo-menu-search {
-  width: 100%;
-}
-
 .logo-site {
   display: flex;
   justify-content: center;
@@ -91,48 +97,6 @@ span.woocommerce-Price-amount.amount {
 
 .logo-site-img {
   max-height: 6rem;
-}
-
-.header-socials img {
-  max-width: 2.2rem;
-}
-
-.header-socials a {
-  text-decoration: none;
-}
-
-.header-phone {
-  display: flex;
-  justify-content: center;
-}
-
-.header-phone a {
-  font-size: 26px;
-  color: #009CFE;
-  font-family: "Zilla Slab Highlight", cursive !important;
-  text-decoration: none;
-  margin-left: 0.5rem;
-}
-
-.header-phone a:hover {
-  font-size: 28px;
-  color: #F26619;
-}
-
-.header-phone img {
-  max-width: 2.2rem;
-}
-
-.header-connexion a {
-  font-size: 26px;
-  color: #009CFE;
-  font-family: "Zilla Slab Highlight", cursive !important;
-  transition: color 0.2s ease;
-}
-
-.header-connexion a:hover {
-  font-size: 28px;
-  color: #F26619;
 }
 
 .header-menu {
@@ -149,49 +113,46 @@ span.woocommerce-Price-amount.amount {
   list-style: none;
   font-weight: 600;
   padding: 0 2rem;
-  width: 6rem;
+  width: auto;
 }
 
 #menu-menu-principal a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 #menu-menu-principal li:hover {
-  background: #F26619;
-  border-radius: 0.15rem;
-  padding: 1.72rem;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-radius: 0 0 7px;
+  border-color: #FF7F11;
 }
 
 #menu-menu-principal li:hover a {
-  color: #f1f1f1;
+  color: #FF7F11;
+  font-weight: 700;
 }
 
-#searchform input[type=text] {
-  border: none;
-  border-radius: 1rem;
-  background: #d3d3d3;
-  color: #F26619;
+input.search-field {
+  border-radius: 13px;
+  border-style: solid;
+  border-color: #FF7F11;
+  border-width: 3px;
+}
+
+.connexion-inscription a:hover {
+  color: #ffffff;
+}
+.connexion-inscription a {
+  text-decoration: none;
+  color: #FF7F11;
   font-weight: 600;
-  padding: 10px;
-  font-size: 16px;
-  width: 100%;
-}
-
-#searchform input::-moz-placeholder {
-  color: #009CFE;
-}
-
-#searchform input:-ms-input-placeholder {
-  color: #009CFE;
-}
-
-#searchform input::placeholder {
-  color: #009CFE;
 }
 
 .annonces {
-  background: #F26619;
-  color: #121314;
+  background: #FF7F11;
+  color: #ffffff;
   padding: 1px;
   display: flex;
   justify-content: center;
@@ -201,20 +162,16 @@ span.woocommerce-Price-amount.amount {
   margin: 1rem;
 }
 
-.header-connexion.col-2 a {
-  text-decoration: none;
-  font-weight: 600;
-  font-family: "Chakra Petch";
+.highlight {
+  height: 40vh;
+  background-color: #0077B6;
 }
 
-/* CALL TO ACTION*/
 .calltoaction {
-  padding: 2rem 0;
+  margin: 0;
 }
-
 .calltoaction img {
-  border-radius: 2rem 0;
-  max-width: 100%;
+  width: 100%;
 }
 
 /* Boucle nouveautées accueil */
@@ -259,8 +216,8 @@ del .woocommerce-Price-amount {
   padding-left: 0.4rem !important;
   font-size: 12px !important;
   text-decoration: line-through;
-  -webkit-text-decoration-color: #121314;
-          text-decoration-color: #121314;
+  -webkit-text-decoration-color: #ffffff;
+          text-decoration-color: #ffffff;
 }
 
 .product-image img {
@@ -273,22 +230,20 @@ del .woocommerce-Price-amount {
 
 .product-title a {
   text-decoration: none;
-  color: #F26619;
+  color: #FF7F11;
   font-size: x-large;
 }
 
 span.woocommerce-Price-amount.amount {
   font-size: larger;
   font-weight: 600;
-  color: #007FA9;
-  font-family: "Chakra Petch", sans-serif;
 }
 
 .liste-nouveautees h3 {
   font-size: 1.2rem;
   text-align: center;
   font-style: none;
-  color: #009CFE;
+  color: #0077B6;
 }
 
 .liste-nouveautees p {
@@ -298,10 +253,24 @@ span.woocommerce-Price-amount.amount {
 .liste-nouveautees a {
   font-weight: 600;
   text-decoration: none;
-  color: #F26619;
+  color: #FF7F11;
 }
 
 .liste-nouveautees a:hover {
-  color: #009CFE;
+  color: #0077B6;
   font-weight: 700;
+}
+
+.call-to-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-color: #0077B6;
+}
+
+.call-to-action h2 {
+  color: #fff;
+  text-align: center;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

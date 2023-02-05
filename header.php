@@ -1,82 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
-  <?php wp_head()?>
+  <?php wp_head() ?>
 </head>
+
 <body>
   <div class="logo-menu-search row align-items-center">
     <div class="logo-site col-2">
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Retour à la page d'accueil">
-      <img src="<?php echo get_theme_mod( 'logo_upload' ); ?>" alt="Logo" class="logo-site-img">
-    </a>
+      <a href="<?php echo esc_url(home_url('/')); ?>" title="Retour à la page d'accueil">
+        <img src="<?php echo get_theme_mod('logo_upload'); ?>" alt="Logo" class="logo-site-img">
+      </a>
     </div>
-    <div class="header-search col-4">
-      <form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-              <input type="text" placeholder="Rechercher un jeu..." name="s" id="s" value="<?php the_search_query(); ?>">
+
+    <nav class="menu-principal col-6">
+      <?php
+      wp_nav_menu(array(
+        'menu' => 'menu-principal',
+        'container' => false,
+        'menu_class' => 'menu-principal-container'
+      ));
+      ?>
+    </nav>
+
+    <div class="recherche col-2">
+      <form role="search" method="get" class="search-form" action="<?php echo home_url('/'); ?>">
+        <label>
+          <input type="search" class="search-field" placeholder="<?php echo esc_attr_x('Rechercher…', 'placeholder') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" />
+        </label>
       </form>
     </div>
-    <div class="header-phone col-2">
-      <img src="../wp-content/themes/ludocaz/img/logo-whatsapp.png" alt="">
-        <a href="tel:0650292142">06 50 29 21 42</a>
+
+    <div class="connexion-inscription col-2">
+      <?php
+      if (is_user_logged_in()) {
+      ?>
+        <a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>">Mon compte</a>
+      <?php
+      } else {
+      ?>
+        <a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>">Connexion / Inscription</a>
+      <?php
+      }
+      ?>
     </div>
-    <div class="header-socials col-2">
-    <a href="https://www.instagram.com" target="_blank">
-      <img src="..\wp-content\themes\ludocaz\img\logo-instagram.png" alt="">
-    </a>
-    <a href="https://www.facebook.com" target="_blank">
-      <img src="..\wp-content\themes\ludocaz\img\logo-facebook.png" alt="">
-    </a>
-    <a href="https://www.tiktok.com" target="_blank">
-      <img src="..\wp-content\themes\ludocaz\img\logo-tiktok.png" alt="">
-    </a>
-    <a href="https://www.twitter.com" target="_blank">
-      <img src="..\wp-content\themes\ludocaz\img\logo-twitter.png" alt="">
-    </a>
-    <a href="https://www.youtube.com" target="_blank">
-      <img src="..\wp-content\themes\ludocaz\img\logo-youtube.png" alt="">
-    </a>
+
+    <div class="connexion-inscription">
 
     </div>
-    <div class="header-connexion col-2">
-        <?php if ( is_user_logged_in() ) { ?>
-    <a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" class="button">Mon compte</a>
 
-    <?php } else { ?>
-    <a href="<?php echo esc_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ); ?>" class="button">Connexion</a>
-
-    <?php } ?>
-    </div>
   </div>
-
-<nav class="menu-principal">
-  <?php
-    wp_nav_menu( array(
-      'menu' => 'menu-principal',
-      'container' => false,
-      'menu_class' => 'menu-principal-container'
-    ));
-  ?>
-</nav>
 
   <div class="annonces align-items-center">
     <p>
-      <?php 
-        $args = array(
-          'post_type' => 'annonce',
-          'posts_per_page' => -1
-        );
-        $annonces = get_posts( $args );
+      <?php
+      $args = array(
+        'post_type' => 'annonce',
+        'posts_per_page' => -1
+      );
+      $annonces = get_posts($args);
 
-        foreach ( $annonces as $annonce ) {
-          echo '<div class="annonces align-items-center">';
-          echo '<p>' . $annonce->post_content . '</p>';
-          echo '</div>';
-        }
+      foreach ($annonces as $annonce) {
+        echo '<div class="annonces align-items-center">';
+        echo '<p>' . $annonce->post_content . '</p>';
+        echo '</div>';
+      }
       ?>
     </p>
   </div>
-  <div class="container">
