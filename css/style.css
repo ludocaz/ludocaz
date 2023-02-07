@@ -83,7 +83,6 @@ h3 {
 }
 
 .logo-menu-search.row.align-items-center {
-  position: -webkit-sticky;
   position: sticky;
   margin: 0;
   top: 0;
@@ -238,8 +237,7 @@ del .woocommerce-Price-amount {
   padding-left: 0.4rem !important;
   font-size: 12px !important;
   text-decoration: line-through;
-  -webkit-text-decoration-color: #ffffff;
-          text-decoration-color: #ffffff;
+  text-decoration-color: #ffffff;
 }
 
 .product-image img {
