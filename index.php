@@ -65,6 +65,24 @@
 
   <div class="liste-nouveautees">
     <h2 class="titre-h2-accueil col-3">Derniers arrivages</h2>
+    <div class="titre-liste row">
+      <div class="col-5">
+        <h3>Titre des articles</h3>
+      </div>
+      <div class="col-1">
+        <h3>Stock(s)</h3>
+      </div>
+      <div class="col-1">
+        <h3>État</h3>
+      </div>
+      <div class="col-2">
+        <h3>Prix du produit</h3>
+      </div>
+      <div class="col-3">
+        <h3>Bouton accès article</h3>
+      </div>
+    </div>
+
     <?php
     $args = array(
       'post_type' => 'product',
@@ -78,37 +96,48 @@
       <div class="row">
         <div class="col-5">
           <?php if ($counter == 1) : ?>
-            <h3>Titre des articles</h3>
           <?php endif; ?>
-          <a href="<?php the_permalink(); ?>">
+          <a href="<?php the_permalink(); ?>" class="titrearticles">
             <?php the_title(); ?>
           </a>
         </div>
 
         <div class="col-1">
           <?php if ($counter == 1) : ?>
-            <h3>Stock(s)</h3>
           <?php endif; ?>
-          <p><?php echo $product->get_stock_quantity(); ?></p>
+          <p class="stock"><?php echo $product->get_stock_quantity(); ?></p>
         </div>
 
         <div class="col-1">
-          <?php if ($counter == 1) : ?>
-            <h3>État</h3>
-          <?php endif; ?>
-          <p><?php echo $product->get_stock_status(); ?></p>
+          <?php
+          // Récupérer l'ID du produit
+          $product_id = $product->get_id();
+
+          // Récupérer les termes pour l'attribut personnalisé "etatduproduit"
+          $etatduproduit_terms = wp_get_post_terms($product_id, 'pa_etatduproduit');
+
+          // Boucle à travers les termes de l'attribut personnalisé "etatduproduit"
+          foreach ($etatduproduit_terms as $etatduproduit_term) {
+            // Récupérer le nom du terme pour l'attribut personnalisé "etatduproduit"
+            $etatduproduit_term_name = $etatduproduit_term->name;
+
+            // Définir une classe CSS pour chaque terme en utilisant le nom du terme en minuscule
+            $etatduproduit_term_slug = $etatduproduit_term->slug;
+            $etatduproduit_term_class = 'etatduproduit-' . strtolower($etatduproduit_term_slug);
+          ?>
+            <!-- Afficher le nom du terme pour l'attribut personnalisé "etatduproduit" avec la classe CSS correspondante -->
+            <p class="etatduproduit <?php echo $etatduproduit_term_class; ?>"><?php echo $etatduproduit_term_name; ?></p>
+          <?php } ?>
         </div>
 
         <div class="col-2">
           <?php if ($counter == 1) : ?>
-            <h3>Prix du produit</h3>
           <?php endif; ?>
           <p class="prix"><?php echo $product->get_price(); ?>€</p>
         </div>
 
         <div class="col-3">
           <?php if ($counter == 1) : ?>
-            <h3>Bouton accès article</h3>
           <?php endif; ?>
           <a href="<?php the_permalink(); ?>" class="button">Accéder à l'article</a>
         </div>

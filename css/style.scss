@@ -218,8 +218,52 @@ span.woocommerce-Price-amount.amount {
   color: $couleur-principale;
 }
 
+.liste-nouveautees {
+  margin-bottom: 20px;
+}
+
+.titre-liste {
+  text-align: center;
+}
+
 .liste-nouveautees p {
   text-align: center;
+  margin: 0;
+}
+
+.button {
+  text-align: center;
+}
+
+a.button {
+  border-style: solid;
+  padding: 3px 5px;
+  border-radius: 17px;
+  border-color: $couleur-principale-dark;
+  background-color: $couleur-principale;
+  color: $couleur-texte !important;
+  transition: transform 0.2s ease-in-out;
+}
+
+a.button:hover {
+  border-color: $couleur-secondaire;
+  transform: translateX(10px);
+}
+
+.col-5 a:hover {
+  font-weight: 700;
+}
+
+.liste-nouveautees .col-1 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.liste-nouveautees .col-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 .liste-nouveautees a {
@@ -228,9 +272,76 @@ span.woocommerce-Price-amount.amount {
   color: $couleur-secondaire;
 }
 
-.liste-nouveautees a:hover {
-  color: $couleur-principale;
+.liste-nouveautees .row {
+  border-style: solid;
+  border-top: none;
+  border-color: $couleur-principale-dark !important;
+  align-items: center;
+  padding: 6px 0;
+}
+
+p.prix {
+  margin: 0;
+}
+
+p.etat {
+  margin: 0;
+}
+
+p.stock {
+  margin: 0;
+}
+
+.titre-liste {
+  border-style: solid;
+  border-top: solid !important;
+}
+
+// COULEURS DES ÉTATS DU TABLEAU
+
+.etatduproduit-neuf {
+  background-color: $neuf;
   font-weight: 700;
+  border-radius: 13px;
+}
+
+.etatduproduit-reconditionne {
+  background-color: $reconditionne;
+  font-weight: 700;
+  border-radius: 13px;
+}
+
+.etatduproduit-proche-du-neuf {
+  background-color: $proche_du_neuf;
+  font-weight: 700;
+  border-radius: 13px;
+  font-size: 15px;
+}
+
+.etatduproduit-bon-etat {
+  background-color: $bon_etat;
+  font-weight: 700;
+  border-radius: 13px;
+}
+
+.etatduproduit-etat-correct {
+  background-color: $etat_correct;
+  font-weight: 700;
+  border-radius: 13px;
+}
+
+.etatduproduit-etat-moyen {
+  background-color: $etat_moyen;
+  font-weight: 700;
+  border-radius: 13px;
+  color: $couleur-texte;
+}
+
+.etatduproduit-mauvais-etat {
+  background-color: $mauvais_etat;
+  font-weight: 700;
+  border-radius: 13px;
+  color: $couleur-texte;
 }
 
 // CALL TO ACTION MIDDLE
