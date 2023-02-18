@@ -1,0 +1,97 @@
+// BANDEAU NEWSLETTER
+
+.newsletter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $couleur-principale;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  .partie-gauche {
+    display: flex;
+    align-items: center;
+
+    .texte-newsletter {
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: $couleur-texte;
+      }
+
+      p {
+        font-size: 16px;
+        margin: 0;
+        color: $couleur-texte;
+      }
+    }
+  }
+
+  .partie-droite {
+    display: flex;
+    align-items: center;
+
+    .newsletter-form {
+      display: flex;
+      align-items: center;
+
+      input[type="email"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+        width: 350px;
+      }
+
+      button {
+        background-color: $couleur-secondaire;
+        color: $couleur-texte;
+        font-weight: 500;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: $couleur-principale-dark;
+        }
+      }
+    }
+  }
+}
+
+// FOOTER
+
+.footer {
+  margin: 0 !important;
+  padding: 20px;
+  background-color: $couleur-principale-dark;
+}
+
+.copyright {
+  background-color: #3b3b3b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  .left {
+    font-size: 14px;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    img {
+      width: 50px;
+      margin-left: 10px;
+    }
+  }
+}

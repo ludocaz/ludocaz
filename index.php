@@ -154,8 +154,31 @@
   <h2>Voici le call to action</h2>
 </div>
 
-<div class="container">
-  <p>suite</p>
+<div class="histoire-ludocaz container">
+  <h2 class="titre-h2-accueil">Histoire de Ludocaz</h2>
+
+  <div class="row">
+    <div class="col-3 photo-profil-apropos">
+      <img src="http://ludocaznew.test/wp-content/uploads/2023/02/44319736_10216958768663476_1345044402598313984_n.jpg" alt="">
+    </div>
+
+    <div class="col-9">
+      <p>Ludocaz est né d'une constatation alarmante : des milliers de jeux de société sont abandonnés dans des greniers, des caves ou des placards, condamnés à pourrir dans l'oubli. Mon projet consiste à redonner vie à ces jeux oubliés en leur offrant une seconde chance.<br>
+        <br>
+        En restaurant ces jeux de société anciens et abîmés avec soin, en remplaçant les pièces manquantes et en réparant les dégâts, Ludocaz permet aux amateurs passionnés de jeux de société de découvrir des trésors cachés et de profiter de jeux uniques et authentiques.<br>
+        <br>
+        Notre initiative vise à préserver la culture ludique en restaurant des jeux de société anciens et en les offrant à une nouvelle génération de joueurs. En achetant des jeux restaurés sur Ludocaz, nos clients font un geste pour la planète en évitant le gaspillage de jeux qui méritent d'être appréciés à leur juste valeur.<br>
+        <br>
+        Rejoignez notre communauté de joueurs passionnés et contribuez à la préservation de la culture ludique en redonnant vie à des jeux de société oubliés.<br>
+        <br>
+        Gérald JOLY<br>
+        Directeur général. LOOOL
+      </p>
+    </div>
+  </div>
+
+
+
 </div>
 
 <?php get_footer() ?>

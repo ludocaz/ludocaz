@@ -78,94 +78,8 @@ span.woocommerce-Price-amount.amount {
   background-color: #0077B6 !important;
 }
 
-h3 {
-  font-size: 21px !important;
-}
-
-.logo-menu-search.row.align-items-center {
-  position: sticky;
-  margin: 0;
-  top: 0;
-  z-index: 1;
-  background-color: #003552;
-}
-
-.annonces {
-  align-items: center !important;
-  top: 6rem;
-}
-
-.logo-site {
-  display: flex;
-  justify-content: center;
-  padding: 4px 0;
-}
-
-.logo-site-img {
-  max-height: 6rem;
-}
-
-.header-menu {
-  text-align: center;
-}
-
-#menu-menu-principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#menu-menu-principal li {
-  list-style: none;
-  font-weight: 600;
-  padding: 0 2rem;
-  width: auto;
-}
-
-#menu-menu-principal a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-#menu-menu-principal li:hover {
-  border-style: solid;
-  border-top: none;
-  border-left: none;
-  border-radius: 0 0 7px;
-  border-color: #FF7F11;
-}
-
-#menu-menu-principal li:hover a {
-  color: #FF7F11;
-  font-weight: 700;
-}
-
-input.search-field {
-  border-radius: 13px;
-  border-style: solid;
-  border-color: #FF7F11;
-  border-width: 3px;
-}
-
-.connexion-inscription a:hover {
-  color: #ffffff;
-}
-.connexion-inscription a {
-  text-decoration: none;
-  color: #FF7F11;
-  font-weight: 600;
-}
-
-.annonces {
-  background: #FF7F11;
-  color: #ffffff;
-  padding: 1px;
-  display: flex;
-  justify-content: center;
-}
-
-.annonces p {
-  margin: 1rem;
+h2.titre-h2-accueil {
+  max-width: 350px;
 }
 
 .highlight {
@@ -342,6 +256,10 @@ p.stock {
   border-top: solid !important;
 }
 
+.titre-liste.row {
+  border-radius: 10px 10px 0 0;
+}
+
 .etatduproduit-neuf {
   background-color: #90EE90;
   font-weight: 700;
@@ -399,4 +317,184 @@ p.stock {
   color: #fff;
   text-align: center;
   width: 100%;
+}
+
+.histoire-ludocaz {
+  padding-bottom: 20px;
+}
+
+.photo-profil-apropos img {
+  max-width: 300px;
+  border-radius: 0 10px 0 10px;
+}
+
+.logo-menu-search.row.align-items-center {
+  position: sticky;
+  margin: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #003552;
+}
+
+.annonces {
+  align-items: center !important;
+  top: 6rem;
+}
+
+.logo-site {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0;
+}
+
+.logo-site-img {
+  max-height: 6rem;
+}
+
+.header-menu {
+  text-align: center;
+}
+
+#menu-menu-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-menu-principal li {
+  list-style: none;
+  font-weight: 600;
+  padding: 0 2rem;
+  width: auto;
+}
+
+#menu-menu-principal a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#menu-menu-principal li:hover {
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-radius: 0 0 7px;
+  border-color: #FF7F11;
+}
+
+#menu-menu-principal li:hover a {
+  color: #FF7F11;
+  font-weight: 700;
+}
+
+input.search-field {
+  border-radius: 13px;
+  border-style: solid;
+  border-color: #FF7F11;
+  border-width: 3px;
+}
+
+.connexion-inscription a:hover {
+  color: #ffffff;
+}
+.connexion-inscription a {
+  text-decoration: none;
+  color: #FF7F11;
+  font-weight: 600;
+}
+
+.annonces {
+  background: #FF7F11;
+  color: #ffffff;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.annonces p {
+  margin: 1rem;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #0077B6;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.newsletter .partie-gauche {
+  display: flex;
+  align-items: center;
+}
+.newsletter .partie-gauche .texte-newsletter h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.newsletter .partie-gauche .texte-newsletter p {
+  font-size: 16px;
+  margin: 0;
+  color: #ffffff;
+}
+.newsletter .partie-droite {
+  display: flex;
+  align-items: center;
+}
+.newsletter .partie-droite .newsletter-form {
+  display: flex;
+  align-items: center;
+}
+.newsletter .partie-droite .newsletter-form input[type=email] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 350px;
+}
+.newsletter .partie-droite .newsletter-form button {
+  background-color: #FF7F11;
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.newsletter .partie-droite .newsletter-form button:hover {
+  background-color: #003552;
+}
+
+.footer {
+  margin: 0 !important;
+  padding: 20px;
+  background-color: #003552;
+}
+
+.copyright {
+  background-color: #3b3b3b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.copyright .left {
+  font-size: 14px;
+}
+.copyright .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.copyright .right img {
+  width: 50px;
+  margin-left: 10px;
+}
+
+h3 {
+  font-size: 21px !important;
 }/*# sourceMappingURL=style.css.map */

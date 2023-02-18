@@ -1,0 +1,94 @@
+.logo-menu-search.row.align-items-center {
+  position: sticky;
+  margin: 0;
+  top: 0;
+  z-index: 1;
+  background-color: $couleur-principale-dark;
+}
+
+.annonces {
+  align-items: center !important;
+  top: 6rem;
+}
+
+.logo-site {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0;
+}
+
+.logo-site-img {
+  max-height: 6rem;
+}
+
+.header-menu {
+  text-align: center;
+}
+
+#menu-menu-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-menu-principal li {
+  list-style: none;
+  font-weight: 600;
+  padding: 0 2rem;
+  width: auto;
+}
+
+#menu-menu-principal a {
+  text-decoration: none;
+  color: $couleur-texte;
+}
+
+#menu-menu-principal li:hover {
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-radius: 0 0 7px;
+  border-color: $couleur-secondaire;
+}
+
+#menu-menu-principal li:hover a {
+  color: $couleur-secondaire;
+  font-weight: 700;
+}
+
+// FONCTION RECHERCHER
+
+input.search-field {
+  border-radius: 13px;
+  border-style: solid;
+  border-color: $couleur-secondaire;
+  border-width: 3px;
+}
+
+// CONNEXION INSCRIPTION
+
+.connexion-inscription {
+  a:hover {
+    color: $couleur-texte;
+  }
+
+  a {
+    text-decoration: none;
+    color: $couleur-secondaire;
+    font-weight: 600;
+  }
+}
+
+// ANNONCES HEADER
+
+.annonces {
+  background: $couleur-secondaire;
+  color: $couleur-texte;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.annonces p {
+  margin: 1rem;
+}
