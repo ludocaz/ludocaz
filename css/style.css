@@ -4,8 +4,8 @@ Theme Name: ludocaz
 Theme URI: https://github.com/ludocaz/ludocaz
 Author: Gérald JOLY
 Author URI: https://github.com/ludocaz/
-Description: Thème pour le site Ludo'caz
-Version: 0.6.2
+Description: Thème pour le site Ludocaz
+Version: 0.6.3
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
@@ -82,7 +82,6 @@ h2.titre-h2-accueil {
 
 .highlight {
   height: 40vh;
-  background-color: #0077B6;
 }
 
 .calltoaction {
@@ -304,17 +303,28 @@ p.stock {
 }
 
 .call-to-action {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
+  background-color: #003552;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-color: #FF7F11;
+}
+.call-to-action .row {
+  margin: 0;
+}
+
+.call-to-action .col-2 img {
   background-color: #0077B6;
+  border-radius: 70px;
+  border-style: solid;
+  border-color: #ffffff;
+  box-shadow: inset 2px 2px 16px rgba(0, 0, 0, 0.5);
 }
 
 .call-to-action h2 {
-  color: #fff;
   text-align: center;
-  width: 100%;
+  margin: 0;
+  color: #ffffff;
+  margin: 20px 0 20px 0;
 }
 
 .histoire-ludocaz {

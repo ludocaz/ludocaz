@@ -1,5 +1,6 @@
 <?php get_header() ?>
 <div class="highlight">
+  <img src="<?php echo get_template_directory_uri(); ?>/img/image-highlight.png" alt="">
 </div>
 
 <div class="container">
@@ -149,7 +150,58 @@
 </div>
 
 <div class="call-to-action">
-
+  <div class="row">
+    <div class="col-2">
+      <h2>Jeux d'ambiance</h2>
+      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icone-categorie.png" alt="Image 1"></a>
+    </div>
+    <div class="col-2">
+      <h2>Incontournables</h2>
+      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icone-categorie.png" alt="Image 2"></a>
+    </div>
+    <div class="col-2">
+      <h2>Jeux de cartes</h2>
+      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icone-categorie.png" alt="Image 3"></a>
+    </div>
+    <div class="col-2">
+      <h2>jeux de reflexion</h2>
+      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icone-categorie.png" alt="Image 4"></a>
+    </div>
+    <div class="col-2">
+      <h2>Se la jouer en solo</h2>
+      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icone-categorie.png" alt="Image 5"></a>
+    </div>
+    <div class="col-2">
+      <h2>Se la jouer en duo</h2>
+      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icone-categorie.png" alt="Image 6"></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2">
+      <h2>Les oldies</h2>
+      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icone-categorie.png" alt="Image 1b"></a>
+    </div>
+    <div class="col-2">
+      <h2>Escape games</h2>
+      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icone-categorie.png" alt="Image 2b"></a>
+    </div>
+    <div class="col-2">
+      <h2>Jeux de rôles</h2>
+      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icone-categorie.png" alt="Image 3b"></a>
+    </div>
+    <div class="col-2">
+      <h2>Jeux enfants</h2>
+      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icone-categorie.png" alt="Image 4b"></a>
+    </div>
+    <div class="col-2">
+      <h2>Promotions</h2>
+      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icone-categorie.png" alt="Image 5b"></a>
+    </div>
+    <div class="col-2">
+      <h2>Jeux entre adultes</h2>
+      <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icone-categorie.png" alt="Image 6b"></a>
+    </div>
+  </div>
 </div>
 
 <div class="histoire-ludocaz container">
@@ -174,9 +226,6 @@
       </p>
     </div>
   </div>
-
-
-
 </div>
 
 <?php get_footer() ?>

@@ -6,7 +6,6 @@ h2.titre-h2-accueil {
 
 .highlight {
   height: 40vh;
-  background-color: #0077B6;
 }
 
 //Tuiles informations
@@ -238,17 +237,29 @@ p.stock {
 // CALL TO ACTION MIDDLE
 
 .call-to-action {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
-  background-color: $couleur-principale;
+  background-color: $couleur-principale-dark;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-color: $couleur-secondaire;
+
+  .row {
+    margin: 0;
+  }
+}
+
+.call-to-action .col-2 img {
+  background-color: #0077B6;
+  border-radius: 70px;
+  border-style: solid;
+  border-color: #ffffff;
+  box-shadow: inset 2px 2px 16px rgb(0 0 0 / 50%);
 }
 
 .call-to-action h2 {
-  color: #fff;
   text-align: center;
-  width: 100%;
+  margin: 0;
+  color: $couleur-texte;
+  margin: 20px 0 20px 0;
 }
 
 // HISTOIRE DU SITE
