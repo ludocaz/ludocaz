@@ -159,7 +159,7 @@
 
   <div class="row">
     <div class="col-3 photo-profil-apropos">
-      <img src="http://ludocaznew.test/wp-content/uploads/2023/02/44319736_10216958768663476_1345044402598313984_n.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/photo-profil.jpg" alt="">
     </div>
 
     <div class="col-9">
