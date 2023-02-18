@@ -1,13 +1,10 @@
 /*
-Theme Name: Ludo'caz
-Theme URI: https://www.ludocaz.fr/
+Theme Name: ludocaz
+Theme URI: https://github.com/ludocaz/ludocaz.git
 Author: Gérald JOLY
-Author URI: https://www.ludocaz.fr/
+Author URI: https://github.com/ludocaz/
 Description: Thème pour le site Ludo'caz
-Version: 0.1
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: ludocaz
+Version: 0.6
 */
 
 @import "fonts";
@@ -17,8 +14,3 @@ Text Domain: ludocaz
 @import "home";
 @import "header";
 @import "footer";
-
-
-h3 {
-  font-size: 21px !important;
-}

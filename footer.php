@@ -30,7 +30,10 @@
 
   </div>
   <div class="feed-insta col-4">
-    <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+    <div class="tagembed-container" style=" width:100%;height:100%;overflow: auto;">
+      <div class="tagembed-socialwall" data-wall-id="88220"></div>
+      <script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script>
+    </div>
   </div>
 </div>
 

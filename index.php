@@ -1,7 +1,5 @@
 <?php get_header() ?>
-
 <div class="highlight">
-
 </div>
 
 <div class="container">
@@ -151,7 +149,7 @@
 </div>
 
 <div class="call-to-action">
-  <h2>Voici le call to action</h2>
+
 </div>
 
 <div class="histoire-ludocaz container">
@@ -163,11 +161,11 @@
     </div>
 
     <div class="col-9">
-      <p>Ludocaz est né d'une constatation alarmante : des milliers de jeux de société sont abandonnés dans des greniers, des caves ou des placards, condamnés à pourrir dans l'oubli. Mon projet consiste à redonner vie à ces jeux oubliés en leur offrant une seconde chance.<br>
+      <p>Ludocaz est né d'une constatation alarmante : des milliers de jeux de société sont abandonnés dans nos greniers, nos caves ou nos placards, condamnés à finir leur vie dans l'oubli. Mon projet consiste à redonner vie à ces jeux oubliés en leur offrant une seconde chance.<br>
         <br>
-        En restaurant ces jeux de société anciens et abîmés avec soin, en remplaçant les pièces manquantes et en réparant les dégâts, Ludocaz permet aux amateurs passionnés de jeux de société de découvrir des trésors cachés et de profiter de jeux uniques et authentiques.<br>
+        En restaurant ces jeux de société anciens et abîmés avec soin, en remplaçant les pièces manquantes et en réparant les dégâts, Ludocaz permet aux amateurs passionnés de jeux de société de découvrir des trésors cachés et de profiter de jeux uniques et authentiques à prix malin!<br>
         <br>
-        Notre initiative vise à préserver la culture ludique en restaurant des jeux de société anciens et en les offrant à une nouvelle génération de joueurs. En achetant des jeux restaurés sur Ludocaz, nos clients font un geste pour la planète en évitant le gaspillage de jeux qui méritent d'être appréciés à leur juste valeur.<br>
+        L'initiative vise à préserver la culture ludique en restaurant des jeux de société anciens et en les offrant à une nouvelle génération de joueurs. En achetant des jeux restaurés sur Ludocaz, nos clients font un geste pour la planète en évitant le gaspillage de jeux qui méritent d'être appréciés à leur juste valeur.<br>
         <br>
         Rejoignez notre communauté de joueurs passionnés et contribuez à la préservation de la culture ludique en redonnant vie à des jeux de société oubliés.<br>
         <br>
