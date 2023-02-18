@@ -8,13 +8,13 @@
 
   <div class="calltoaction row">
     <div class="col-4">
-      <img src="http://ludocaznew.test/wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/envoi-rapide.png" alt="">
     </div>
     <div class="col-4">
-      <img src="http://ludocaznew.test/wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/envoi-rapide.png" alt="">
     </div>
     <div class="col-4">
-      <img src="http://ludocaznew.test/wp-content/themes/ludocaz/img/envoi-rapide.png" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/envoi-rapide.png" alt="">
     </div>
   </div>
 
